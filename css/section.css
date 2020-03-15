@@ -1,0 +1,36 @@
+.section{
+  
+}
+
+.wrapper {
+  background-color: white;
+  display: flex;
+}
+.wrapper .side-wrapper {
+  background-color: #4f628e;
+  width: 30%;
+  position: relative;
+}
+.wrapper .body-container {
+  background-color: #7887ab;
+  z-index: 1;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+.wrapper .handler {
+  background-color: black;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  cursor: col-resize;
+  border-left: 5px solid white;
+}
+.wrapper iframe {
+  /* iframes are inline by default */
+  background: #000;
+  border: none; /* Reset default border */
+  height: 100%; /* Viewport-relative units */
+  width: 100%;
+}

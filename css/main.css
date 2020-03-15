@@ -1,0 +1,15 @@
+@import "navigation.css";
+@import "section.css";
+
+* {
+  /*
+    box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성입니다.
+    border-box : 테두리를 기준으로 크기를 정합니다.
+    */
+  box-sizing: border-box;
+}
+
+.title__header {
+  margin: 0px 20px;
+  top: 30px;
+}
