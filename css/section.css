@@ -6,13 +6,12 @@
   display: flex;
   margin: 0px 50px;
 }
-.wrapper .side-wrapper{
-width: 30%;
+.wrapper .side-wrapper {
+  width: 30%;
 }
 .wrapper .side-wrapper,
 .body-container {
- border:1px solid lightgray;
-
+  border: 1px solid lightgray;
 
   /* Use box-sizing so that element's outerwidth will match width property */
   box-sizing: border-box;
@@ -21,7 +20,7 @@ width: 30%;
   flex: 1 1 auto;
 }
 .wrapper .body-container {
-  background-color:white;
+  background-color: white;
   z-index: 1;
   flex-grow: 1;
   width: 70%;
@@ -47,5 +46,4 @@ width: 30%;
   border: none; /* Reset default border */
   height: 800px; /* Viewport-relative units */
   width: 100%;
-  
 }
