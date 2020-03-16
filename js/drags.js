@@ -36,3 +36,5 @@ document.addEventListener("mouseup", function(e) {
   // Turn off dragging flag when user mouse is up
   isHandlerDragging = false;
 });
+
+

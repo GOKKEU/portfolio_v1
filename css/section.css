@@ -4,12 +4,15 @@
 .wrapper {
   background-color: white;
   display: flex;
+  margin: 0px 50px;
 }
-.wrapper .side-wrapper,.body-container {
-  background-color: #4f628e;
-  width: 30%;
+.wrapper .side-wrapper{
+width: 30%;
+}
+.wrapper .side-wrapper,
+.body-container {
+ border:1px solid lightgray;
 
-  
 
   /* Use box-sizing so that element's outerwidth will match width property */
   box-sizing: border-box;
@@ -17,12 +20,11 @@
   /* Allow box to grow and shrink, and ensure they are all equally sized */
   flex: 1 1 auto;
 }
-.wrapper .body-container  {
-  background-color: #7887ab;
+.wrapper .body-container {
+  background-color:white;
   z-index: 1;
   flex-grow: 1;
-  margin-left: 5px;
-
+  width: 70%;
 }
 .wrapper .handler {
   width: 20px;
@@ -34,15 +36,16 @@
 .handler::before {
   content: "";
   display: block;
-  width: 4px;
+  width: 10px;
   height: 100%;
-  background: red;
+  background: #7887ab;
   margin: 0 auto;
 }
 .wrapper iframe {
   /* iframes are inline by default */
   background: #000;
   border: none; /* Reset default border */
-  /* height: 100%;  Viewport-relative units 
-  width: 100%;*/
+  height: 800px; /* Viewport-relative units */
+  width: 100%;
+  
 }
