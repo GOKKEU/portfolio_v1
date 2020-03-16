@@ -2,7 +2,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -12,13 +11,11 @@
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
 }
 
 .side__navbar li a {
-  display: block;
   color: #000;
-  text-decoration: none;
+  display: block;
 }
 .side__navbar li i {
   font-size: 20px;

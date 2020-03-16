@@ -9,44 +9,54 @@
       src="https://kit.fontawesome.com/0a1ef7d9f7.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function() {
+        document
+          .querySelector(".side__navbar")
+          .querySelector("ul").style.width = "40px";
+      });
+    </script>
   </head>
 
   <body>
     <div class="side__navbar">
       <ul>
         <li>
-          <a class="active" href="#home"><i class="fas fa-grin-wink"></i></a>
+          <a class="active" href="#section_header"
+            ><i class="fas fa-grin-wink"></i
+          ></a>
         </li>
         <li>
-          <a href="#news"><i class="fas fa-palette"></i></a>
+          <a href="#section_1"><i class="fas fa-palette"></i></a>
         </li>
         <li>
-          <a href="#contact"><i class="fas fa-grin-stars"></i></a>
+          <a href="#section_2"><i class="fas fa-grin-stars"></i></a>
         </li>
         <li>
-          <a href="#about"><i class="fab fa-sketch"></i></a>
+          <a href="#section_3"><i class="fab fa-sketch"></i></a>
         </li>
         <li>
-          <a href=""><i class="fas fa-seedling"></i></a>
+          <a href="#section_4"><i class="fas fa-seedling"></i></a>
         </li>
       </ul>
     </div>
-    <header class="title__header">
+    <header class="title__header" id="section_header">
       <h2>GIWYEOM PORTFOLIO</h2>
     </header>
     <main>
-      <div class="section">
+      <div class="section" id="section_1">
         <div class="wrapper">
-          <div class="side-wrapper" id="section_1">
+          <div class="side-wrapper">
             <iframe
               id="iframe_1"
-              src="https://gokkeu.github.io/kakao-clone/calendar.html"
+              src="https://gokkeu.github.io/kakao-clone/"
             ></iframe>
           </div>
           <div class="handler"></div>
           <div class="body-container"></div>
         </div>
       </div>
+      <!--<div class="section"  id="section_2" ></div>-->
     </main>
     <script>
       const nav = document.querySelector(".side__navbar").querySelector("ul");
