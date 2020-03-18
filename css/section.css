@@ -4,10 +4,9 @@
 .wrapper {
   background-color: white;
   display: flex;
-  margin: 0px 50px;
 }
 .wrapper .side-wrapper {
-  width: 40%;
+
 }
 .wrapper .side-wrapper,
 .body-container {
@@ -26,7 +25,6 @@
   width: 60%;
 }
 .wrapper .handler {
-  
   width: 20px;
   padding: 0;
   cursor: ew-resize;
@@ -38,7 +36,7 @@
   display: block;
   width: 10px;
   height: 100%;
-  background: #7887ab;
+  background:palevioletred;
   margin: 0 auto;
 }
 .wrapper iframe {
