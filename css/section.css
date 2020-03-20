@@ -1,52 +1,82 @@
-.section {
-}
-
-.wrapper {
-  background-color: white;
-  display: flex;
-}
-.wrapper .side-wrapper {
-
-}
-.wrapper .side-wrapper,
-.body-container {
-  border: 1px solid lightgray;
-
-  /* Use box-sizing so that element's outerwidth will match width property */
-  box-sizing: border-box;
-
-  /* Allow box to grow and shrink, and ensure they are all equally sized */
-  flex: 1 1 auto;
-}
-.wrapper .body-container {
-  background-color: white;
-  z-index: 1;
-  flex-grow: 1;
-  width: 60%;
-}
-.wrapper .handler {
-  width: 20px;
-  padding: 0;
-  cursor: ew-resize;
-  flex: 0 0 auto;
-}
-
-.handler::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 100%;
-  background:palevioletred;
-  margin: 0 auto;
-}
-.wrapper iframe {
-  /* iframes are inline by default */
-  background: #000;
-  border: none; /* Reset default border */
-  height: 800px; /* Viewport-relative units */
-  width: 100%;
+/* Layout */
+html {
+    display: flex;
+    flex-direction: column;
+} /* IE fix */
+body {
+    display: flex; /* crée un contexte flex pour ses enfants */
+    flex-direction: column; /* affichage vertical */
+    min-height: 100vh; /* toute la hauteur du viewport (compatible IE9+) */
 }
 .wrapper {
-  width: 100%;
-  height: 100%;
+    display: block; /* IE fix */
+    flex: 1 1 auto; /* occupe la hauteur restante */
+    display: flex; /* crée un contexte flex pour ses enfants */
+    flex-direction: row; /* affichage horizontal */
+}
+.iframeBox {
+    width: 25em;
+    height: 850px;
+}
+.content {
+    display: block; /* IE fix */
+    flex: 1; /* occupe la largeur restante */
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+    body {
+        min-height: 0;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .content {
+        flex-basis: auto;
+    }
+    .iframeBox {
+        width: auto;
+        height: 800px;
+        order: 1;
+    }
+}
+
+/* Decoration */
+
+body {
+    margin: 0;
+    background: #fff;
+    
+}
+
+.iframeBox,
+section,
+footer {
+    margin: 0;
+    border: 2px solid #fff;
+
+    color: #fff;
+}
+header {
+}
+.iframeBox {
+    padding-top: 100px;
+    padding-left:10px;;
+    padding-right: 10px;
+}
+
+section {
+    padding-top: 100px;
+    padding-left: 20px;
+    overflow-x: scroll;
+}
+footer {
+
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
