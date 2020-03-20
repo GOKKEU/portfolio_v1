@@ -16,7 +16,7 @@ body {
 }
 .iframeBox {
     width: 25em;
-    height: 1000px;
+    height: 900px;
 }
 .content {
     display: block; /* IE fix */
