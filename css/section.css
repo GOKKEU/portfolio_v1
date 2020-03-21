@@ -47,7 +47,6 @@ body {
 body {
     margin: 0;
     background: #fff;
-    
 }
 
 .iframeBox,
@@ -55,14 +54,12 @@ section,
 footer {
     margin: 0;
     border: 2px solid #fff;
-
-    color: #fff;
 }
 header {
 }
 .iframeBox {
     padding-top: 100px;
-    padding-left:10px;;
+    padding-left: 10px;
     padding-right: 10px;
 }
 
@@ -72,7 +69,6 @@ section {
     overflow-x: scroll;
 }
 footer {
-
     text-align: center;
 }
 
