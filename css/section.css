@@ -77,4 +77,6 @@ iframe {
 
 .hightfix iframe {
     height: 800px;
+    width: 400px;
 }
+

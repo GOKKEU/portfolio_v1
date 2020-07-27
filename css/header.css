@@ -1,7 +1,8 @@
 .header{
 background-color: black;
 padding-top: 20px;
-
+position: fixed;
+width: 100%;
 }
 .container{
 padding-left: 30px;
@@ -17,8 +18,9 @@ color: white;
     display: flex;
 }
 .menu-item{
-
+    flex: none;
     margin-left: 20px;
+    
 }
 .menu-item a{
 
@@ -26,4 +28,8 @@ color: white;
     font-size: 20px;
     text-decoration:none
 
+}
+
+.wrapper{
+    margin-top: 70px;
 }
