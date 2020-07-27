@@ -1,273 +1,295 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" href="css/main.css" />
-        <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-        <script src="https://kit.fontawesome.com/0a1ef7d9f7.js" crossorigin="anonymous"></script>
-        <!--   <script>
-      $(document).ready(function() {
-        document
-          .querySelector(".side__navbar")
-          .querySelector("ul").style.width = "40px";
-      });
-    </script>-->
-    </head>
 
-    <body>
-        <div class="wrapper">
-            <div class="iframeBox">
-                <iframe src="https://gokkeu.github.io/kakao-clone/"></iframe>
-            </div>
-            <section class="content">
-                <div class="tableContainer">
-                    <h1 style="margin-top: 0px;">KAKAO-CLONE PROJECT</h1>
-                    <a>사용언어: JAVASCRIPT ,HTML ,CSS</a><br />
-                    <br />
-                    <a href="https://github.com/GOKKEU" target="_blank"> <i class="fab fa-github" style="font-size:20px"></i> GITHUB URL </a>
-                    <br />
-                    <br />
-                    <table cellpadding="0" cellspacing="0" class="scrollTable">
-                        <thead class="fixedHeader">
-                            <tr>
-                                <td rowspan="2">페이지</td>
-                                <td colspan="3" rowspan="3">설명</td>
-                                <td colspan="2" rowspan="2">JS</td>
-                                <td colspan="2" t="s">날짜</td>
-                                <td colspan="2" t="s">css</td>
-                                <td rowspan="2">url</td>
-                            </tr>
-                            <tr>
-                                <td>시작</td>
-                                <td>종료</td>
-                                <td>공통</td>
-                                <td>페이지</td>
-                            </tr>
-                        </thead>
-                        <tbody class="scrollContent">
-                            <tr>
-                                <td rowspan="2" t="s">친구목록</td>
-                                <td>1.css로 친구 목록 UI</td>
-                                <td>X</td>
-                                <td>03월 03일</td>
-                                <td>03월 04일</td>
-                                <td>style.css</td>
-                                <td>friends.css</td>
-                                <td rowspan="2" t="s">
-                                    <a href="  https://gokkeu.github.io/kakao-clone/friends.html">친구 목록 화면</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.Date 객체에서 현재 시간을 실시간으로 반영</td>
-                                <td>clock.js</td>
-                                <td>03월 03일</td>
-                                <td>03월 04일</td>
-                                <td>nav-bar.css</td>
-                                <td>friend.css</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3" t="s">대화창</td>
-                                <td>1.Chat 페이지에서 목록클릭시 BestFriend 채팅창으로 이동</td>
-                                <td>X</td>
-                                <td>03월 03일</td>
-                                <td>03월 04일</td>
-                                <td>reset.css</td>
-                                <td>chats.css</td>
-                                <td>
-                                    <a href="https://gokkeu.github.io/kakao-clone/index.html">채팅 목록 화면</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.채팅 UI</td>
-                                <td>X</td>
-                                <td>03월 04일</td>
-                                <td>03월 04일</td>
-                                <td>header.css</td>
-                                <td rowspan="2" t="s">chat.css</td>
-                                <td rowspan="2" t="s">
-                                    <a href=" https://gokkeu.github.io/kakao-clone/chart.html">채팅 화면</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3.CSS를 통해 채팅입력창에 animation효과를 적용</td>
-                                <td>X</td>
-                                <td>03월 04일</td>
-                                <td>03월 07일</td>
-                                <td>mobile.css</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="7">검색창</td>
-                                <td>0.검색창UI</td>
-                                <td>X</td>
-                                <td>03월 04일</td>
-                                <td>03월 07일</td>
-                                <td rowspan="7"></td>
-                                <td rowspan="7">find.css</td>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/kakaopage.css" />
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/0a1ef7d9f7.js" crossorigin="anonymous"></script>
+</head>
 
-                                <td rowspan="7">
-                                    <a href=" https://gokkeu.github.io/kakao-clone/find.html">검색 화면</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1.날씨API를 통해 위치,온도,날씨(icon) 적용</td>
-                                <td>weather.js</td>
-                                <td>03월 11일</td>
-                                <td>03월 11일</td>
-                            </tr>
-                            <tr>
-                                <td t="s">2.검색창 클릭 하면 화면크기 증가</td>
-                                <td rowspan="4" t="s">todo.js</td>
-                                <td t="n">03월 10일</td>
-                                <td t="n">03월 10일</td>
-                            </tr>
-                            <tr>
-                                <td>3.검색창/X버튼 이외 마우스 클릭시 원래 크기로 돌아옴</td>
-                                <td>03월 10일</td>
-                                <td>03월 11일</td>
-                            </tr>
-                            <tr>
-                                <td>6.저장된 목록의 X 버튼 클릭시 삭제</td>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="container_left ">
 
-                                <td>03월 10일</td>
-                                <td>03월 11일</td>
-                            </tr>
-                            <tr>
-                                <td>4.저장된 값 화면에 로드</td>
-                                <td>03월 10일</td>
-                                <td>03월 11일</td>
-                            </tr>
-                            <tr>
-                                <td>5.검색어를 입력 후 돋보기 클릭하면 입력된 값 저장</td>
-                                <td>textSave.js</td>
-                                <td>03월 10일</td>
-                                <td>03월 10일</td>
-                            </tr>
-
-                            <tr>
-                                <td rowspan="2" t="s">더보기</td>
-                                <td>1.더보기 화면 UI</td>
-                                <td>X</td>
-                                <td>03월 06일</td>
-                                <td>03월 07일</td>
-                                <td rowspan="2"></td>
-                                <td rowspan="2">more.css</td>
-                                <td rowspan="2">
-                                    <a href="  https://gokkeu.github.io/kakao-clone/more.html">더보기 화면</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2.'캘린더 일정 만들기 '마우스 호버/클릭</td>
-                                <td>X</td>
-                                <td>03월 11일</td>
-                                <td>03월 11일</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="10" t="s">캘린더</td>
-                                <td>1.달력UI</td>
-                                <td>X</td>
-                                <td>03월 12일</td>
-                                <td>03월 12일</td>
-                                <td></td>
-                                <td rowspan="5" t="s">calendar.css</td>
-                                <td rowspan="14" t="s">
-                                    <a href=" https://gokkeu.github.io/kakao-clone/calendar.html">캘린더</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td xml:space="preserve">2. 모든해 년/월/일 보여짐</td>
-                                <td>calendar.js</td>
-                                <td>03월 12일</td>
-                                <td>03월 16일</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td t="s">1.마우스 휠을 위로하면 왼쪽으로 이동 <br />(ex 3월 -&gt;2월 )</td>
-                                <td rowspan="2" t="s">infiniteScroll.js</td>
-                                <td t="n">03월 15일</td>
-                                <td t="n">03월 16일</td>
-                                <td t="z"></td>
-                            </tr>
-                            <tr>
-                                <td>2.마우스 휠을 아래로하면 오른쪽으로 이동 <br />(ex 3월 -&gt;4월)</td>
-                                <td>03월 15일</td>
-                                <td>03월 16일</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td xml:space="preserve">5.(+)버튼 클릭시 새로운 화면이동</td>
-                                <td>X</td>
-                                <td>03월 16일</td>
-                                <td>03월 17일</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td t="s">6.시작/종료 클릭시 년/월/일 설정가능한 룰렛 보여짐</td>
-                                <td rowspan="4" t="s">chgDate.js</td>
-                                <td t="n">03월 17일</td>
-                                <td t="n">03월 17일</td>
-                                <td t="z"></td>
-                                <td rowspan="7" t="s">chgDate.css</td>
-                            </tr>
-                            <tr>
-                                <td t="s">7.마우스 휠로 룰렛 날자 설정가능</td>
-                                <td t="n">03월 17일</td>
-                                <td t="n">03월 18일</td>
-                                <td t="z"></td>
-                            </tr>
-                            <tr>
-                                <td t="s">8.확인 버튼 클릭시 룰렛 가운데 숫자가 입력됨</td>
-                                <td t="n">03월 17일</td>
-                                <td t="n">03월 18일</td>
-                                <td t="z"></td>
-                            </tr>
-                            <tr>
-                                <td t="s">9.시작날짜는 종료날짜보다 항상 작아야 저장 가능</td>
-                                <td t="n">03월 18일</td>
-                                <td t="n">03월 18일</td>
-                                <td t="z"></td>
-                            </tr>
-                            <tr>
-                                <td t="s">10.저장버튼 클릭시 해당 날짜의 시작일에 태그 생성됨</td>
-                                <td rowspan="4" t="s">addSchedule.js</td>
-                                <td t="n">03월 18일</td>
-                                <td t="n">03월 18일</td>
-                                <td t="z"></td>
-                            </tr>
-                            <tr>
-                                <td rowspan="4" t="z">캘린더 <br />팝업</td>
-                                <td>11.저장버튼 클릭시 이전달/이후달 전체 태그 생성</td>
-
-                                <td>03월 22일</td>
-                                <td>03월 23일</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>12.일정 태그 색상 선택 기능</td>
-
-                                <td>03월 23일</td>
-                                <td>03월 23일</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>13.일정 태그 클릭시 내용 팝업 보여짐</td>
-
-                                <td>03월 23일</td>
-                                <td>03월 23일</td>
-                                <td></td>
-                                <td rowspan="2">popup.css</td>
-                            </tr>
-                            <tr>
-                                <td>13.팝업의 내요 수정/삭제 기능,날짜형식 체크</td>
-                                <td>popup.js</td>
-                                <td>03월 23일</td>
-                                <td>03월 24일</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="menu ">
+                        <div class="menu-item"><a href="index.html">KAKAO-CLONE</a></div>
+                        <div class="menu-item"><a href="search.html">뉴스 검색 페이지</a></div>
+                        <div class="menu-item"><a href="calender.html">캘린더</a></div>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
-    </body>
+    </header>
+    <div class="wrapper">
+        <div class="iframeBox">
+            <iframe src="https://gokkeu.github.io/kakao-clone/"></iframe>
+        </div>
+        <section class="content">
+            <div class="tableContainer">
+                <h1 style="margin-top: 20px;font-size: 30px;">KAKAO-CLONE PROJECT</h1>
+                <a style="margin-top: 20px;font-size: 15px;"> 사용언어: JAVASCRIPT ,HTML ,CSS</a><br />
+                <br />
+                <a style="margin-top: 20px;font-size: 15px;margin-bottom: 20px;">
+                    kakao talk 의 앱 UI를 따라서 클론 코딩 했습니다
+                    기존 클론코딩 강의를 따라 전체적인 틀을 만들고 스스로 몇까지 화면을 추가했습니다.
+                     
+                    1. 뉴스 검색 페이지
+                    2. 캘린더 (일정 추가 삭제 수정)
+
+                    아래에는 개발하면서 일정과 설명을 정리했습니다.
+                </a>
+              
+                <br />
+                <br />
+                <a href="https://github.com/GOKKEU" target="_blank"> <i class="fab fa-github"
+                    style="font-size:20px"></i> GITHUB URL </a>
+                <br />
+                <br />
+                <table cellpadding="0" cellspacing="0" class="scrollTable">
+                    <thead class="fixedHeader">
+                        <tr>
+                            <td rowspan="2">페이지</td>
+                            <td colspan="3" rowspan="3">설명</td>
+                            <td colspan="2" rowspan="2">JS</td>
+                            <td colspan="2" t="s">날짜</td>
+                            <td colspan="2" t="s">css</td>
+                            <td rowspan="2">url</td>
+                        </tr>
+                        <tr>
+                            <td>시작</td>
+                            <td>종료</td>
+                            <td>공통</td>
+                            <td>페이지</td>
+                        </tr>
+                    </thead>
+                    <tbody class="scrollContent">
+                        <tr>
+                            <td rowspan="2" t="s">친구목록</td>
+                            <td>1.css로 친구 목록 UI</td>
+                            <td>X</td>
+                            <td>03월 03일</td>
+                            <td>03월 04일</td>
+                            <td>style.css</td>
+                            <td>friends.css</td>
+                            <td rowspan="2" t="s">
+                                <a href="  https://gokkeu.github.io/kakao-clone/friends.html">친구 목록 화면</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.Date 객체에서 현재 시간을 실시간으로 반영</td>
+                            <td>clock.js</td>
+                            <td>03월 03일</td>
+                            <td>03월 04일</td>
+                            <td>nav-bar.css</td>
+                            <td>friend.css</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" t="s">대화창</td>
+                            <td>1.Chat 페이지에서 목록클릭시 BestFriend 채팅창으로 이동</td>
+                            <td>X</td>
+                            <td>03월 03일</td>
+                            <td>03월 04일</td>
+                            <td>reset.css</td>
+                            <td>chats.css</td>
+                            <td>
+                                <a href="https://gokkeu.github.io/kakao-clone/index.html">채팅 목록 화면</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.채팅 UI</td>
+                            <td>X</td>
+                            <td>03월 04일</td>
+                            <td>03월 04일</td>
+                            <td>header.css</td>
+                            <td rowspan="2" t="s">chat.css</td>
+                            <td rowspan="2" t="s">
+                                <a href=" https://gokkeu.github.io/kakao-clone/chart.html">채팅 화면</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3.CSS를 통해 채팅입력창에 animation효과를 적용</td>
+                            <td>X</td>
+                            <td>03월 04일</td>
+                            <td>03월 07일</td>
+                            <td>mobile.css</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">검색창</td>
+                            <td>0.검색창UI</td>
+                            <td>X</td>
+                            <td>03월 04일</td>
+                            <td>03월 07일</td>
+                            <td rowspan="7"></td>
+                            <td rowspan="7">find.css</td>
+
+                            <td rowspan="7">
+                                <a href=" https://gokkeu.github.io/kakao-clone/find.html">검색 화면</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1.날씨API를 통해 위치,온도,날씨(icon) 적용</td>
+                            <td>weather.js</td>
+                            <td>03월 11일</td>
+                            <td>03월 11일</td>
+                        </tr>
+                        <tr>
+                            <td t="s">2.검색창 클릭 하면 화면크기 증가</td>
+                            <td rowspan="4" t="s">todo.js</td>
+                            <td t="n">03월 10일</td>
+                            <td t="n">03월 10일</td>
+                        </tr>
+                        <tr>
+                            <td>3.검색창/X버튼 이외 마우스 클릭시 원래 크기로 돌아옴</td>
+                            <td>03월 10일</td>
+                            <td>03월 11일</td>
+                        </tr>
+                        <tr>
+                            <td>6.저장된 목록의 X 버튼 클릭시 삭제</td>
+
+                            <td>03월 10일</td>
+                            <td>03월 11일</td>
+                        </tr>
+                        <tr>
+                            <td>4.저장된 값 화면에 로드</td>
+                            <td>03월 10일</td>
+                            <td>03월 11일</td>
+                        </tr>
+                        <tr>
+                            <td>5.검색어를 입력 후 돋보기 클릭하면 입력된 값 저장</td>
+                            <td>textSave.js</td>
+                            <td>03월 10일</td>
+                            <td>03월 10일</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="2" t="s">더보기</td>
+                            <td>1.더보기 화면 UI</td>
+                            <td>X</td>
+                            <td>03월 06일</td>
+                            <td>03월 07일</td>
+                            <td rowspan="2"></td>
+                            <td rowspan="2">more.css</td>
+                            <td rowspan="2">
+                                <a href="  https://gokkeu.github.io/kakao-clone/more.html">더보기 화면</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2.'캘린더 일정 만들기 '마우스 호버/클릭</td>
+                            <td>X</td>
+                            <td>03월 11일</td>
+                            <td>03월 11일</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="10" t="s">캘린더</td>
+                            <td>1.달력UI</td>
+                            <td>X</td>
+                            <td>03월 12일</td>
+                            <td>03월 12일</td>
+                            <td></td>
+                            <td rowspan="5" t="s">calendar.css</td>
+                            <td rowspan="14" t="s">
+                                <a href=" https://gokkeu.github.io/kakao-clone/calendar.html">캘린더</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td xml:space="preserve">2. 모든해 년/월/일 보여짐</td>
+                            <td>calendar.js</td>
+                            <td>03월 12일</td>
+                            <td>03월 16일</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td t="s">1.마우스 휠을 위로하면 왼쪽으로 이동 <br />(ex 3월 -&gt;2월 )</td>
+                            <td rowspan="2" t="s">infiniteScroll.js</td>
+                            <td t="n">03월 15일</td>
+                            <td t="n">03월 16일</td>
+                            <td t="z"></td>
+                        </tr>
+                        <tr>
+                            <td>2.마우스 휠을 아래로하면 오른쪽으로 이동 <br />(ex 3월 -&gt;4월)</td>
+                            <td>03월 15일</td>
+                            <td>03월 16일</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td xml:space="preserve">5.(+)버튼 클릭시 새로운 화면이동</td>
+                            <td>X</td>
+                            <td>03월 16일</td>
+                            <td>03월 17일</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td t="s">6.시작/종료 클릭시 년/월/일 설정가능한 룰렛 보여짐</td>
+                            <td rowspan="4" t="s">chgDate.js</td>
+                            <td t="n">03월 17일</td>
+                            <td t="n">03월 17일</td>
+                            <td t="z"></td>
+                            <td rowspan="7" t="s">chgDate.css</td>
+                        </tr>
+                        <tr>
+                            <td t="s">7.마우스 휠로 룰렛 날자 설정가능</td>
+                            <td t="n">03월 17일</td>
+                            <td t="n">03월 18일</td>
+                            <td t="z"></td>
+                        </tr>
+                        <tr>
+                            <td t="s">8.확인 버튼 클릭시 룰렛 가운데 숫자가 입력됨</td>
+                            <td t="n">03월 17일</td>
+                            <td t="n">03월 18일</td>
+                            <td t="z"></td>
+                        </tr>
+                        <tr>
+                            <td t="s">9.시작날짜는 종료날짜보다 항상 작아야 저장 가능</td>
+                            <td t="n">03월 18일</td>
+                            <td t="n">03월 18일</td>
+                            <td t="z"></td>
+                        </tr>
+                        <tr>
+                            <td t="s">10.저장버튼 클릭시 해당 날짜의 시작일에 태그 생성됨</td>
+                            <td rowspan="4" t="s">addSchedule.js</td>
+                            <td t="n">03월 18일</td>
+                            <td t="n">03월 18일</td>
+                            <td t="z"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" t="z">캘린더 <br />팝업</td>
+                            <td>11.저장버튼 클릭시 이전달/이후달 전체 태그 생성</td>
+
+                            <td>03월 22일</td>
+                            <td>03월 23일</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12.일정 태그 색상 선택 기능</td>
+
+                            <td>03월 23일</td>
+                            <td>03월 23일</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>13.일정 태그 클릭시 내용 팝업 보여짐</td>
+
+                            <td>03월 23일</td>
+                            <td>03월 23일</td>
+                            <td></td>
+                            <td rowspan="2">popup.css</td>
+                        </tr>
+                        <tr>
+                            <td>13.팝업의 내요 수정/삭제 기능,날짜형식 체크</td>
+                            <td>popup.js</td>
+                            <td>03월 23일</td>
+                            <td>03월 24일</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>

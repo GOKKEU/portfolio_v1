@@ -1,0 +1,29 @@
+.header{
+background-color: black;
+padding-top: 20px;
+
+}
+.container{
+padding-left: 30px;
+color: white;
+ margin: auto;
+ height: 40px;
+}
+.container_left{
+    display: flex; 
+}
+
+.menu{
+    display: flex;
+}
+.menu-item{
+
+    margin-left: 20px;
+}
+.menu-item a{
+
+    color: white;
+    font-size: 20px;
+    text-decoration:none
+
+}

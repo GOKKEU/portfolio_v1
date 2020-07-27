@@ -1,6 +1,7 @@
 @import "reset.css";
+@import "section.css";
 @import "header.css";
-
+@import "table.css";
 * {
   /*
     box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성입니다.
